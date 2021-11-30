@@ -1,0 +1,18 @@
+.form {
+  border: solid 1px lightgrey;
+  box-shadow: 0px 10px 10px lightgray;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 40px auto;
+}
+
+.form input {
+  margin: 20px 0;
+}
+
+.form button {
+  background-image: rgb(243, 123, 11);
+  border-color: transparent;
+  font-weight: bold;
+}
