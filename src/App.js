@@ -17,20 +17,22 @@ function App() {
   return (
     <>
       <NavBar />
-      <Routes>
-        <Route path="/" element={<HomeView />} />
-        <Route path="/signup" element={<SignupView />} />
-        <Route path="/login" element={<LoginView />} />
-        <Route path="/rum/:id" element={<RumDetailsView />} />
-        <Route path="/favoritesView" element={<FavoritesView />} />
-        <Route element={<AdminRoute />}>
-          <Route path="/addRum" element={<AddRumView />} />
-          <Route path="/addCountry" element={<AddCountryView />} />
-          <Route path="/editRum/:id" element={<EditRumView />} />
-          <Route path="/countries" element={<CountriesView />} />
-        </Route>
-        <Route element={<AuthRoute />}></Route>
-      </Routes>
+      <div>
+        <Routes>
+          <Route path="/" element={<HomeView />} />
+          <Route path="/signup" element={<SignupView />} />
+          <Route path="/login" element={<LoginView />} />
+          <Route path="/rum/:id" element={<RumDetailsView />} />
+          {/* <Route path="/favoritesView" element={<FavoritesView />} /> */}
+          <Route element={<AdminRoute />}>
+            <Route path="/addRum" element={<AddRumView />} />
+            <Route path="/addCountry" element={<AddCountryView />} />
+            <Route path="/editRum/:id" element={<EditRumView />} />
+            <Route path="/countries" element={<CountriesView />} />
+          </Route>
+          <Route element={<AuthRoute />}></Route>
+        </Routes>
+      </div>
     </>
   );
 }
