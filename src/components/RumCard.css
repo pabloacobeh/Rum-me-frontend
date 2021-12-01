@@ -18,20 +18,17 @@
   margin-top: 10px;
 }
 
-.card-title {
-}
-
 .rumCardImage {
-  width: 200px;
+  width: 150px;
   display: flex;
   margin: 0 auto;
 }
 
 .buttonCard {
   margin: 10px auto;
+  /* justify-content: space-between; */
   text-align: center;
   display: flex;
-  background-image: rgb(243, 123, 11);
   border-radius: 25px;
   font-weight: bold;
   border-color: transparent;

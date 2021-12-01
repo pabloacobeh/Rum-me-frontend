@@ -26,7 +26,7 @@ const NavBar = () => {
           <Nav className="links">
             {user ? (
               <>
-                <a style={{ color: "white", margin: "8px" }}>
+                <a style={{ color: "black", margin: "18px" }}>
                   Welcome, {user.name}
                 </a>
                 <button onClick={logOut} className="btn btn-outline-dark">

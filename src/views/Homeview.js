@@ -24,11 +24,6 @@ const HomeView = () => {
 
   const handleSearch = (event) => setSearch(event.target.value.toLowerCase());
 
-  const resetRums = () => {
-    getAllRums();
-    setSearch("");
-  };
-
   return (
     <div className="container mt-5">
       <div className="row">

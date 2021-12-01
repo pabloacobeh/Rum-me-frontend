@@ -7,8 +7,14 @@ export const loginUserToApi = async (user) => {
   const response = await axios.post(`${apiUrl}/auth/login`, user);
   try {
     if (response.data) {
-      const { _id, role } = response.data;
-      localStorage.setItem(tokenString, JSON.stringify({ id: _id, role }));
+      console.log("res", response.data);
+      const {
+        user: { _id, role, name },
+      } = response.data;
+      localStorage.setItem(
+        tokenString,
+        JSON.stringify({ id: _id, role, name })
+      );
     }
   } catch (error) {
     console.log(error);

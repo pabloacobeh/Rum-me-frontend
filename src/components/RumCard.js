@@ -1,6 +1,7 @@
 import React from "react";
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
+// import { addToFavorites } from "../services/favoriteServices";
 import "./RumCard.css";
 
 const rumImage =
@@ -8,18 +9,23 @@ const rumImage =
 
 const RumCard = ({ obj }) => {
   return (
-    <Card style={{ width: "22rem" }}>
+    <Card style={{ width: "15rem" }}>
       <Card.Body>
         <Card.Title>{obj.name}</Card.Title>
         <img
-          className={"rumCardImage"}
+          className="rumCardImage"
           src={obj.image ? obj.image : rumImage}
           alt=""
         />
-
-        <Link to={`/rum/${obj._id}`} className="buttonCard btn btn-primary">
-          More information
-        </Link>
+        <div className="buttonCard">
+          <Link to={`/rum/${obj._id}`} className=" btn btn-primary">
+            More Info
+          </Link>
+          <br />
+          {/* <button onClick={addToFavorites} className="btn btn-outline-dark">
+            🤍
+          </button> */}
+        </div>
       </Card.Body>
     </Card>
   );

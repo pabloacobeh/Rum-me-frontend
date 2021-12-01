@@ -22,6 +22,8 @@ const LoginView = () => {
     event.preventDefault();
     try {
       const userResponse = await loginUserToApi(user);
+      navigate("/");
+      window.location.reload();
     } catch (error) {
       console.log(error);
     }

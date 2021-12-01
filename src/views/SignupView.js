@@ -27,7 +27,7 @@ const Signup = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       <form className="form">
         <h2>Sign Up</h2>
         <input

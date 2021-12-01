@@ -1,9 +1,9 @@
 .navbar {
-  background-image: rgb(60, 122, 228);
+  background-color: hsl(21, 84%, 57%);
 }
 
-.links {
-  margin-right: 10px;
+.Nav.Links {
+  margin-right: 5px;
   color: white;
   text-decoration: none;
   font-weight: bold;
